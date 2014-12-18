@@ -18,10 +18,10 @@ describe( "beautifyNameFilter", function () {
             var str = "FoO DE bar";
             expect( $nameBeautifier.beautify( str ) ).to.equal( "Foo de Bar" );
 
-            str = "FOO dos baRBaZ"
+            str = "FOO dos baRBaZ";
             expect( $nameBeautifier.beautify( str ) ).to.equal( "Foo dos Barbaz" );
 
-            str = "FooDoBar baz"
+            str = "FooDoBar baz";
             expect( $nameBeautifier.beautify( str ) ).to.equal( "Foodobar Baz" );
         });
     });
