@@ -1,0 +1,22 @@
+{
+    "browser": true,
+    "node": true,
+    "globalstrict": true,
+    "validthis": true,
+    "eqeqeq": true,
+    "eqnull": true,
+    "undef": true,
+    "unused": true,
+    "expr": true,
+    "predef": [
+        "angular",
+
+        "module",
+        "inject",
+        "sinon",
+        "expect",
+        "describe",
+        "beforeEach",
+        "it"
+    ]
+}
