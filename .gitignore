@@ -1,0 +1,7 @@
+# IntelliJ
+/.idea
+*.iml
+
+# Bower, NPM
+/libs
+/node_modules
