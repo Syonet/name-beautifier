@@ -13,7 +13,7 @@ gulp.task( "test", function ( cb ) {
 gulp.task( "package", function () {
     return gulp.src( "src/**/*.js" )
                .pipe( ngAnnotate() )
-               .pipe( concat( "syonet.nameBeautifier.js" ) )
+               .pipe( concat( "syonet.namebeautifier.js" ) )
                .pipe( gulp.dest( "dist/" ) );
 });
 

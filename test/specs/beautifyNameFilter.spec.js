@@ -3,7 +3,7 @@
 describe( "beautifyNameFilter", function () {
     var $nameBeautifier;
 
-    beforeEach( module( "syonet.nameBeautifier" ) );
+    beforeEach( module( "syonet.namebeautifier" ) );
     beforeEach( inject(function ( _$nameBeautifier_, $filter ) {
         $nameBeautifier = _$nameBeautifier_;
         this.filter = $filter( "beautifyName" );

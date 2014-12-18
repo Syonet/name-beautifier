@@ -1,7 +1,7 @@
 !function () {
     "use strict";
 
-    angular.module( "syonet.nameBeautifier", [] ).provider( "$nameBeautifier", function () {
+    angular.module( "syonet.namebeautifier", [] ).provider( "$nameBeautifier", function () {
         var provider = this;
 
         provider.skippedWords = [
