@@ -37,7 +37,7 @@
         // -----------------------------------------------------------------------------------------
 
         function testSkippedWord ( word ) {
-            var str =  this.toString();
+            var str = this.toString();
             if ( typeof word === "string" ) {
                 return str === word;
             }
