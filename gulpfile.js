@@ -18,7 +18,10 @@ gulp.task( "package", function () {
 });
 
 gulp.task( "watch", function () {
-    gulp.watch( "src/**/*.js", [ "package", "test" ] );
+    gulp.watch([
+        "src/**/*.js",
+        "test/specs/**/*.js"
+    ], [ "package", "test" ] );
 });
 
 gulp.task( "dev", [ "package", "test", "watch" ] );
