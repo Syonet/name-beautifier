@@ -6,8 +6,7 @@
 
         provider.skippedWords = [
             "de",
-            /d(o|a)s?/,
-            "ltda"
+            /d(o|a)s?/
         ];
 
         provider.$get = function () {
