@@ -1,0 +1,14 @@
+{
+    "name": "syonet.nameBeautifier",
+    "version": "0.0.1",
+    "license": "MIT",
+    "repository": "syonet/name-beautifier",
+    "devDependencies": {
+        "gulp": "^3.8.10",
+        "gulp-concat": "^2.4.1",
+        "karma": "^0.12.18",
+        "karma-chai-plugins": "^0.2.4",
+        "karma-phantomjs-launcher": "^0.1.4",
+        "karma-mocha": "^0.1.10"
+    }
+}
