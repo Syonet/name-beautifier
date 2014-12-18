@@ -1,5 +1,11 @@
 {
     "name": "syonet.nameBeautifier",
+    "main": [ "dist/syonet.namebeautifier.js" ],
+    "ignore": [
+        "src",
+        "test",
+        ".*"
+    ],
     "dependencies": {
         "angular": "~1.3.0"
     },
