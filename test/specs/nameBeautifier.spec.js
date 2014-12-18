@@ -20,6 +20,9 @@ describe( "beautifyNameFilter", function () {
 
             str = "FOO dos baRBaZ"
             expect( $nameBeautifier.beautify( str ) ).to.equal( "Foo dos Barbaz" );
+
+            str = "FooDoBar baz"
+            expect( $nameBeautifier.beautify( str ) ).to.equal( "Foodobar Baz" );
         });
     });
 });
