@@ -45,9 +45,9 @@
 
             return word.test( str );
         }
-    }).filter( "beautifyName", function ( $nameBeautifier ) {
+    }).filter( "beautifyName", ["$nameBeautifier", function ( $nameBeautifier ) {
         return function ( input ) {
             return $nameBeautifier.beautify( input );
         };
-    });
+    }]);
 }();

@@ -1,5 +1,6 @@
 var gulp = require( "gulp" );
 var concat = require( "gulp-concat" );
+var ngAnnotate = require( "gulp-ng-annotate" );
 var karma = require( "karma" );
 
 gulp.task( "test", function ( cb ) {
@@ -11,6 +12,7 @@ gulp.task( "test", function ( cb ) {
 
 gulp.task( "package", function () {
     return gulp.src( "src/**/*.js" )
+               .pipe( ngAnnotate() )
                .pipe( concat( "syonet.nameBeautifier.js" ) )
                .pipe( gulp.dest( "dist/" ) );
 });
