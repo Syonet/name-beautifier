@@ -9,6 +9,10 @@
             /^d(o|a)s?$/
         ];
 
+        provider.uppercaseWords = [
+            /^s(\/|\.)?a\.?$/
+        ];
+
         provider.$get = function () {
             var api = {};
             api.beautify = function ( input ) {
@@ -17,9 +21,15 @@
                 }
 
                 input = input.trim().split( /\s+/ ).map(function ( part ) {
+                    if ( !part ) {
+                        return part;
+                    }
+
                     part = part.toLowerCase();
 
-                    if ( part && !provider.skippedWords.some( testSkippedWord, part ) ) {
+                    if ( provider.uppercaseWords.some( testWord, part ) ) {
+                        part = part.toUpperCase();
+                    } else if ( !provider.skippedWords.some( testWord, part ) ) {
                         part = part[ 0 ].toUpperCase() + part.substr( 1 );
                     }
 
@@ -36,7 +46,7 @@
 
         // -----------------------------------------------------------------------------------------
 
-        function testSkippedWord ( word ) {
+        function testWord ( word ) {
             var str = this.toString();
             if ( typeof word === "string" ) {
                 return str === word;

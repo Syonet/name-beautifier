@@ -29,5 +29,10 @@ describe( "beautifyNameFilter", function () {
             var str = "   FoO bar ";
             expect( $nameBeautifier.beautify( str ) ).to.equal( "Foo Bar" );
         });
+
+        it( "should turn uppercase words into uppercase", function () {
+            var str = "foo s/a";
+            expect( $nameBeautifier.beautify( str ) ).to.equal( "Foo S/A" );
+        });
     });
 });
