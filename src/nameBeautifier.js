@@ -16,10 +16,10 @@
                     return input;
                 }
 
-                input = input.split( /\s+/ ).map(function ( part ) {
+                input = input.trim().split( /\s+/ ).map(function ( part ) {
                     part = part.toLowerCase();
 
-                    if ( !provider.skippedWords.some( testSkippedWord, part ) ) {
+                    if ( part && !provider.skippedWords.some( testSkippedWord, part ) ) {
                         part = part[ 0 ].toUpperCase() + part.substr( 1 );
                     }
 

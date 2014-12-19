@@ -24,5 +24,10 @@ describe( "beautifyNameFilter", function () {
             str = "FooDoBar baz";
             expect( $nameBeautifier.beautify( str ) ).to.equal( "Foodobar Baz" );
         });
+
+        it( "should trim the name", function () {
+            var str = "   FoO bar ";
+            expect( $nameBeautifier.beautify( str ) ).to.equal( "Foo Bar" );
+        });
     });
 });
