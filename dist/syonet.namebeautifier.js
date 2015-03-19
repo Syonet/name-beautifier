@@ -10,7 +10,8 @@
          */
         provider.skippedWords = [
             "de",
-            /^d(o|a)s?$/
+            /^d(o|a)s?$/,
+            "e"
         ];
 
         /**
@@ -18,7 +19,8 @@
          * @type    {String[]}
          */
         provider.uppercaseWords = [
-            /^s(\/|\.)?a\.?$/
+            /^s(\/|\.)?a\.?$/,
+            /^([a-z]\.)+?[a-z]?$/i
         ];
 
         provider.$get = function () {
