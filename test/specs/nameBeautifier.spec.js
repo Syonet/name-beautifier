@@ -23,6 +23,9 @@ describe( "beautifyNameFilter", function () {
 
             str = "FooDoBar baz";
             expect( $nameBeautifier.beautify( str ) ).to.equal( "Foodobar Baz" );
+
+            str = "Foo e BAR";
+            expect( $nameBeautifier.beautify( str ) ).to.equal( "Foo e Bar" );
         });
 
         it( "should trim the name", function () {

@@ -10,7 +10,8 @@
          */
         provider.skippedWords = [
             "de",
-            /^d(o|a)s?$/
+            /^d(o|a)s?$/,
+            "e"
         ];
 
         /**
