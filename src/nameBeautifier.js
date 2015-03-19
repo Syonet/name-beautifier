@@ -19,7 +19,8 @@
          * @type    {String[]}
          */
         provider.uppercaseWords = [
-            /^s(\/|\.)?a\.?$/
+            /^s(\/|\.)?a\.?$/,
+            /^([a-z]\.)+?[a-z]?$/i
         ];
 
         provider.$get = function () {

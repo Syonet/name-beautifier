@@ -36,6 +36,12 @@ describe( "beautifyNameFilter", function () {
         it( "should turn uppercase words into uppercase", function () {
             var str = "foo s/a";
             expect( $nameBeautifier.beautify( str ) ).to.equal( "Foo S/A" );
+
+            str = "a.b.c company";
+            expect( $nameBeautifier.beautify( str ) ).to.equal( "A.B.C Company" );
+
+            str = "a.b.c. company";
+            expect( $nameBeautifier.beautify( str ) ).to.equal( "A.B.C. Company" );
         });
     });
 });
