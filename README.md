@@ -22,7 +22,7 @@ bower install syonet.nameBeautifier
 Then, inject the module into your app:
 
 ```javascript
-angular.module( "app", [ "syonet.nameBeautifier" ]);
+angular.module( "app", [ "syonet.namebeautifier" ]);
 ```
 
 ## Usage
