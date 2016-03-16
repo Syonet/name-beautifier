@@ -5,3 +5,4 @@
 # Bower, NPM
 /libs
 /node_modules
+npm-debug.log
