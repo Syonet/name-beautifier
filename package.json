@@ -3,6 +3,9 @@
     "version": "0.2.1",
     "license": "MIT",
     "repository": "syonet/name-beautifier",
+    "peerDependencies": {
+        "angular": "^1.3.0"
+    },
     "devDependencies": {
         "gulp": "^3.8.10",
         "gulp-concat": "^2.4.1",
